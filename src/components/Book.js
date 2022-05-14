@@ -8,6 +8,7 @@ function Book(book) {
     <div>
       <h1>{title}</h1>
       <p>{Author}</p>
+      <button>Remove</button>
     </div>
   );
 }
