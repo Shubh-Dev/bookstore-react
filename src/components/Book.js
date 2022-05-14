@@ -1,9 +1,13 @@
 import React from 'react';
 
-function Book() {
+function Book(book) {
+  let { title, Author } = book;
+  title = 'Mistress of Spices';
+  Author = 'Divakaruni';
   return (
     <div>
-      <h1>Machine learning by Chime</h1>
+      <h1>{title}</h1>
+      <p>{Author}</p>
     </div>
   );
 }

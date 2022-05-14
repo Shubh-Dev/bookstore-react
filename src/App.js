@@ -18,8 +18,7 @@ class App extends React.Component {
         <h1> Book store app</h1>
         <Header />
         <Routes>
-          <Route path="/" element={<BooksList />} />
-          <Route path="/BooksList" element={<BooksList />} />
+          <Route exact path="/" element={<BooksList />} />
           <Route path="Categories" element={<Categories />} />
 
         </Routes>

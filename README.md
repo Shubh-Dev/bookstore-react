@@ -10,18 +10,12 @@
 
 ## Live Demo (if available)
 
-[Webpage Link]()
-<br/>
-[Webpage Link]()
-
 ## Screenshots
 
 <hr>
 
 Getting Started
 To get the content of this project locally you need to run this command in your terminal:
-
-[Math Magician](https://github.com/Shubh-Dev/math-magician-react.git)
 
 After cloning In the project directory, you can run:
 
