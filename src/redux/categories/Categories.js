@@ -6,6 +6,7 @@ export default function Category(state, action) {
   switch (action.type) {
     case CHECK:
       return state.push(action.payLoad);
-    default: state;
+    default:
+      return state;
   }
 }

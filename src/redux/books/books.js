@@ -1,11 +1,12 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-undef */
+
 const ADD = 'ADD';
 const REMOVE = 'REMOVE';
 
-// let ArrOfBooks = [];
 const Book = {
   title: '',
   id: Date(),
-  // present: false
 };
 
 export const AddAction = (data) => ({ type: ADD, payLoad: data });
@@ -17,7 +18,8 @@ export default function reducer(state = [], action) {
     case ADD:
       return state.push(action.payLoad);
     case REMOVE:
-      return state.filter((book) => { book.id !== id; });
-    default: state;
+      return state.filter((book) => book.id !== id);
+    default:
+      return state;
   }
 }
