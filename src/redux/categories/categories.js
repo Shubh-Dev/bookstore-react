@@ -1,15 +1,11 @@
 const CHECK = 'CHECK';
 
+export const CheckStatus = () => ({ type: CHECK, payLoad: 'Under Construction' });
 
- export const CheckStatus = () => {
-    return { type: CHECK, payLoad: 'Under Construction' };
-};
-
-export default function Category(category = [], action) {
-    switch (action.type) {
-        case CHECK:
-            return category.push(action.payLoad);
-        default: state;
-    }
-};
-
+export default function Category(state, action) {
+  switch (action.type) {
+    case CHECK:
+      return state.push(action.payLoad);
+    default: state;
+  }
+}
